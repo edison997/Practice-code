@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      article {
+        border: solid 1px red;
+      }
+
+      h2,
+      h3 {
+        border: solid 10px #ddd;
+      }
+
+      h2 {
+        width: 300px;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+      h3 {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      main {
+        border: solid 1px red;
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      h4 {
+        border: solid 2px green;
+        margin-left: -50px;
+        margin-right: -50px;
+        text-align: center;
+      }
+      h5 {
+        border-style: double;
+      }
+      h6 {
+        border-style: outset solid dotted double;
+        border-width: 5px;
+      }
+      p {
+        width: 100px;
+        font-size: 32px;
+        border-radius: 50%;
+        border-bottom: solid 2px red;
+      }
+
+      /* 聚焦时，没有轮廓线 */
+      input:focus {
+        outline: none;
+      }
+
+      a {
+        border: solid 1px #ddd;
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      ul > li {
+        /* width: 200px;
+        height: 500px; */
+        display: inline;
+        padding: 5px 10px;
+        border: solid 1px #ddd;
+      }
+
+      ul > li:hover {
+        background: green;
+        color: white;
+        cursor: pointer;
+      }
+      .a2 {
+        display: inline-block;
+        width: 30%;
+        height: 50px;
+        border: solid 1px #ddd;
+        text-align: center;
+        line-height: 3em;
+      }
+
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        /* background: #2c3e50; */
+      }
+
+      main {
+        background: #9b59b6;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box;
+      }
+
+      span {
+        background: #e67e22;
+        display: inline-block;
+        width: -webkit-fill-available;
+        height: -webkit-fill-available;
+      }
+
+      h1 {
+        text-align: center;
+        background: #f1c40f;
+        width: fit-content;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h2>houdunren.com</h2>
+      <h3>hdcms.com</h3>
+      <h5>333</h5>
+      <h6>222</h6>
+      <p>111</p>
+      <input type="text" />
+      <a href="">houdunren.com</a>
+      <a href="">houdunren.com</a>
+      <a href="">houdunren.com</a>
+      <ul>
+        <li>hdcms.com</li>
+        <li>houdunren.com</li>
+        <li>后盾人</li>
+
+        <a class="a2" href="">MYSQL</a>
+        <a class="a2" href="">LINUX</a>
+        <a class="a2" href="">PHP</a>
+      </ul>
+      <main>
+        <span> houdunren.com </span>
+      </main>
+      <h1>houdunren.com</h2>
+    </article>
+  </body>
+</html>

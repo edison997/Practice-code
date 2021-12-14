@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table {
+        border: none;
+        border-collapse: collapse;
+      }
+
+      table td {
+        border: none;
+        border-right: solid 1px #ddd;
+        border-bottom: solid 1px #ddd;
+      }
+
+      table tr:first-child td {
+        border-top: solid 1px #ddd;
+      }
+
+      table td:last-child {
+        border-right: none;
+      }
+      ul {
+        list-style: circle inside;
+        /* list-style-position: inside; */
+      }
+
+      ul li {
+        background: url(xj-small.png) no-repeat 0 6px;
+        background-size: 10px 10px;
+        list-style-position: inside;
+        list-style: none;
+        text-indent: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <td>编号</td>
+          <td>标题</td>
+          <td>网址</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>在线社区</td>
+          <td>houdunren.com</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>开源系统</td>
+          <td>hdcms.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul>
+      <li>今天你吃了吗</li>
+    </ul>
+  </body>
+</html>

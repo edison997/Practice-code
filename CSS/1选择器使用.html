@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      a:link {
+        color: red;
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: blue;
+      }
+
+      a:active {
+        color: yellow;
+      }
+
+      input:focus {
+        background: green;
+      }
+
+      input:hover {
+        background: blue;
+      }
+
+      input:active {
+        background: yellow;
+      }
+      div {
+        height: 100px;
+      }
+      /* 选择作为锚点的标签 */
+      div:target {
+        color: red;
+      }
+
+      /* 选择空标签 */
+      p:empty {
+        border: solid 2px red;
+      }
+      article {
+        margin: 20px 0;
+      }
+
+      /* 选择元素中第一个是span的元素 */
+      .article1 span:first-child {
+        color: red;
+      }
+      .article2 span:first-of-type {
+        color: blue;
+      }
+      .article3 span:last-child {
+        color: yellow;
+      }
+      .article4 span:last-of-type {
+        color: green;
+      }
+      .article5 span:only-child {
+        color: red;
+      }
+
+      .article6 span:only-of-type {
+        color: fuchsia;
+      }
+
+      table tr > td:nth-child(2n + 1) {
+        background: green;
+        color: white;
+      }
+      .article7 span:nth-child(2) {
+        color: palevioletred;
+      }
+
+      .article8 span:nth-of-type(2) {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="">走你</a>
+    <input type="text" />
+
+    <a href="#hdcms">hdcms</a>
+    <div></div>
+    <div id="hdcms">hdcms内容管理系统</div>
+    <p></p>
+    <p></p>
+    <article class="article1">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+        <span>hdcms.com</span>
+      </aside>
+    </article>
+
+    <article class="article2">
+      <span>houdunren.com</span>
+      <aside>
+        <strong>hdcms.com</strong>
+        <span>houdunwang.com</span>
+        <span>houdunwang.com</span>
+      </aside>
+    </article>
+
+    <article class="article3">
+      <span>houdunren.com</span>
+      <aside>
+        <strong>hdcms.com</strong>
+        <span>houdunwang.com</span>
+      </aside>
+      <h1>
+        <span>1</span>
+        <span>2</span>
+      </h1>
+      <span>hdphp.com</span>
+    </article>
+
+    <article class="article4">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+        <strong>hdcms.com</strong>
+      </aside>
+      <span>hdphp.com</span>
+    </article>
+
+    <article class="article5">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+      </aside>
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+      </aside>
+    </article>
+
+    <article class="article6">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+        <span>hdcms.com</span>
+      </aside>
+    </article>
+
+    <article class="article7">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+        <span>hdcms.com</span>
+      </aside>
+      <span>hdphp.com</span>
+    </article>
+
+    
+    <article class="article8">
+      <span>houdunren.com</span>
+      <aside>
+        <span>houdunwang.com</span>
+        <span>hdcms.com</span>
+      </aside>
+      <span>hdphp.com</span>
+    </article>
+
+    <table border="1">
+      <tr>
+        <td>houdunren.com</td>
+        <td>hdcms.com</td>
+        <td>后盾人</td>
+        <td>houdunwang.com</td>
+        <td>hdcms</td>
+      </tr>
+    </table>
+  </body>
+</html>

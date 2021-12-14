@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background-color: cadetblue;
+        /* background-clip: padding-box; */
+        padding: 30px;
+        border: 10px solid red;
+        background-position: right center;
+        background-size: 50%;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+      }
+      p {
+        height: 200px;
+        width: 200px;
+        /* background: linear-gradient(30deg, red, green); */
+        /* background: linear-gradient(to right, red, green); */
+        background: linear-gradient(to left, red, green);
+        background: linear-gradient(to top left, red, green);
+        background: linear-gradient(to right bottom, red, green);
+      }
+      h1 {
+        height: 200px;
+        width: 200px;
+        background: linear-gradient(
+          red,
+          rgb(0, 0, 200),
+          green,
+          rgba(122, 211, 100, 0)
+        );
+      }
+      h2 {
+        height: 200px;
+        width: 200px;
+        background: radial-gradient(red, blue, green);
+        background: radial-gradient(100px 200px, red, blue, green);
+        background: radial-gradient(at bottom left, red, blue);
+        background: radial-gradient(at bottom right, red, blue);
+        background: radial-gradient(at center left, red, blue);
+        background: radial-gradient(at 50% 100%, red, blue);
+      }
+      h3 {
+        width: 150px;
+        height: 150px;
+        background: radial-gradient(red 0, yellow 30%, black 60%, black 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div>222</div>
+    <p>666</p>
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-line {
+        font-size: 26px;
+      }
+      .p2::first-letter {
+        font-size: 30px;
+      }
+      h1::before {
+        content: "⇰";
+        color: red;
+      }
+      h1::after {
+        content: "⟲";
+        color: green;
+      }
+
+      div {
+        border: solid 1px #ddd;
+        width: 150px;
+      }
+
+      div > input[type="text"] {
+        border: none;
+        outline: none;
+      }
+
+      div > input[type="text"] + span:after {
+        content: "\21AA";
+        font-size: 14px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p>后盾人不断更新视频教程</p>
+    <p class="p2">后盾人不断更新视频教程</p>
+    <h1>后盾人</h1>
+
+    <div><input type="text" /><span></span></div>
+  </body>
+</html>

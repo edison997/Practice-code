@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input:enabled {
+        background: wheat;
+      }
+
+      input:disabled {
+        background: #dddddd;
+      }
+
+      input:checked + label {
+        color: green;
+      }
+
+      .input2:required {
+        border: solid 2px yellowgreen;
+      }
+
+      .input3:optional {
+        background: #dcdcdc;
+        border: none;
+      }
+
+      form input:valid {
+        border: solid 1px green;
+      }
+
+      form input:invalid {
+        border: solid 1px red;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" disabled />
+    <input type="text" name="info" />
+
+    <input type="radio" name="sex" checked id="boy" />
+    <label for="boy">男</label>
+    <input type="radio" name="sex" checked id="girl" />
+    <label for="girl">女</label>
+
+    <input class="input2" type="text" name="title" required />
+    <input class="input2" type="text" name="name" />
+
+    <form>
+      <input type="email" />
+      <button>保存</button>
+    </form>
+  </body>
+</html>
