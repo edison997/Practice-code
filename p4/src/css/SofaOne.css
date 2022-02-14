@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.divBox {
+    margin-left: 5%;
+    
+}
+
+.titleDiv {
+    padding: 40px 40px;
+    width: 90%;
+    height: 200px;
+    text-align: center;
+
+}
+
+.titleText {
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    line-height:32px;
+}
+
+.titleP {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.btn1 {
+    
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 200px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: bolder;
+    border: 0;
+    background-color: black;
+    color: white;
+    z-index:111;
+}
+#btn1P {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    color: white;
+    cursor: pointer;
+     z-index:111;
+}
+
+
+.btnL {
+    position: absolute;
+    left: 150px;
+    top: 600px;
+    font-size: 28px;
+    border: 0;
+    background-color:rgba(255, 0, 0, 0) ;
+    opacity: 0.3;
+    display: none;
+}
+
+.btnR {
+    position: absolute;
+    right: 100px;
+    top: 600px;
+    font-size: 28px;
+    border: 0;
+    background-color:rgba(255, 0, 0, 0) ;
+    opacity: 0.3;
+}
+
+
+.show {
+    width: 80%;
+    height: 460px;
+    overflow: hidden;
+    margin: 150px 10% 0 10%;
+    line-height: 32px;
+}
+
+.show img {
+   width:340px;
+   height: 255px;
+   
+}
+.lunbo {
+    width: 1900px;
+    height: 500px;
+    
+}
+.lunbo div {
+    
+    width:340px;
+    height:458px;
+    float: left;
+    border: 1px solid rgba(0, 0, 0, 0.308);
+    border-right: 0;
+   
+}
+
+.lunbo p {
+   
+font-size: 14px;
+margin-bottom: 0;
+
+
+}
+
+.lunboDiv{
+    position: relative;
+}
+
+.p1 {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 30px;
+}
+.p2 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.p3 {
+   text-align: right;
+   margin-right: 30px; 
+   margin-top:16px;
+   color:rgba(0, 0, 0, 0.4);
+}
+
+.p4 {
+   text-align: right;
+   margin-right: 30px; 
+}
+
+.p5 {
+   text-align: right;
+   margin-right: 30px; 
+   color: rgba(0, 0, 0, 0.4);
+}
+
+.p6 {
+    width: 120px;
+    height:40px;
+    line-height: 40px;
+    text-align:center;
+    font-weight: bold;
+    font-size: 12px !important;
+    background-color: white;
+    letter-spacing: 1px;
+    position: absolute;
+   
+    top:20px;
+}
+
+.bor {
+    border-right: 1px solid rgba(0, 0, 0, 0.308);
+}
+
+.navM {
+    margin-top:100px;
+    width: 230px;
+    float: left;
+}
+
+.showImg{
+    margin-top:100px;
+    margin-left: 250px;
+}
+
+
+.myLastImg {
+    margin-top: 20px;
+}
+
+.myLastImgOne {
+    width: 480px;
+    height: 613px;
+    float: left;
+    
+    background-color: rgba(34,34,34,.05);
+    
+}
+
+.myLastImgOnep1 {
+    font-size: 26px;
+    line-height: 1.44;
+    letter-spacing: .18em;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+    margin-bottom: 1.5625rem;
+    margin:200px  0  0 50px;
+}
+.myLastImgOnep2 {
+   margin:50px  0  0 50px;
+}
+
+.lastImg {
+    width: 961px;
+    height: 613px;
+}
+
+.lastp{
+    /* margin:50px  0  0 50px; */
+    opacity:1;
+    width:25px;
+    float:left;
+    margin-top: 10px;
+    border: 1px solid black;
+    transition: 0.3s;
+   
+}
+
+.myLastDiv {
+    width:100px;
+     margin:50px  0  0 50px;
+     font-size: 14px;
+     font-weight: 700;
+}
+.myLastDiv:hover p {
+    width:35px;
+     transition: 0.5s;
+}

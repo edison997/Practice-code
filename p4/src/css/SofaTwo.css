@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    float:left;
+    margin-left:2px;
+    margin-bottom:10px;
+    position:relative;
+    
+}
+
+.imgDiv img {
+    width: 466px;
+    height: 280px;
+   filter: brightness(96%);
+    margin: 75px  0 0 65px;
+}
+
+.imgDiv {
+    width: 595px;
+    height: 430px;
+    background-color: rgba(34,34,34,.05);
+}
+.colorImg {
+    width: 100px;
+    height: 33px;
+}
+
+
+.box p {
+    margin-bottom: 0.4em !important;
+}
+
+.p11 {
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: left;
+    margin-left: 30px;
+    margin-top:16px;
+    color:black;
+    cursor: pointer;
+}
+.p22 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+.p33 {
+    margin-left: 30px;
+   
+   
+}
+
+.p44 {
+    text-align: right;
+    margin-right: 30px; 
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.p55 {
+    text-align: right;
+   margin-right: 30px; 
+ 
+}
+
+.p66 {
+  text-align: right;
+   margin-right: 30px; 
+   color: rgba(0, 0, 0, 0.4);
+}
+.svg {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size:20px;
+    cursor: pointer;
+}
+
+.moreBtn {
+    width: 150px;
+    height: 50px;
+    margin-left: 500px;
+    background-color: #fff;
+    margin-top: 20px;
+    font-size:14px;
+    font-weight: bold;
+}
+.moreBtn:hover {
+    background-color:black;
+    color:#fff;
+}
+.xhx {
+    overflow: hidden;
+    width: 1100px;
+    margin: 0 auto;
+}

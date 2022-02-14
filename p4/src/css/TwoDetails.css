@@ -1,0 +1,47 @@
+.TwoDetails {
+    margin-left:5%;
+    margin-top: 5%;
+}
+
+.renturnDiv {
+    font-size: 12px;
+    font-weight:bold;
+}
+
+.TwoDetailsBox {
+    display:flex;
+    flex-wrap:wrap; 
+    margin-top:80px;
+}
+
+.TwoDetailsBoxLunbo {
+    width: 942px;
+    height: 600px;
+    background-color: rgba(34,34,34,.05);
+    
+}
+
+.TwoDetailsBoxLunbo img {
+    filter: brightness(96%);  
+    width: 753px;
+    height: 452px;  
+    margin:50px 0 0  90px;
+}
+.Pdetail {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom:5px ;
+
+}
+.detailsText {
+    margin-left: 50px;
+}
+
+.detailsSvg {
+    margin-top:10px;
+    font-size: 20px;
+}
+
+.detailsIntroduction {
+   width:400px;
+}

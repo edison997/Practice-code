@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.ul1 {
+    margin-top: 16px;
+   
+}
+
+.ulBox {
+    width: 230px;
+}
+li {
+    list-style: none;
+    color:#666666;
+    font-size:0.875rem;
+    line-height:1.75rem;
+    margin-left: 32px;
+}
+
+hr {
+    width:225px;
+    opacity:0.3;
+}
+
+.zhedie {
+    margin-top:32px;
+}
+
+.imgUl{
+    margin-left: -32px;
+    
+}
+
+.imgLi img{
+    width:40px;
+    height:40px;
+    margin:2px;
+}
+
+.ant-collapse-header{
+    width: 230px;
+}
+.zhedie {
+     width: 230px;
+}
+
+.zhedie svg{
+    width: 16px;
+    height: 16px;
+}
