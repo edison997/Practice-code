@@ -1,6 +1,6 @@
-import './index.css';
-import React, { useMemo, useState, useRef, useCallback } from 'react';
-
+import "./index.css";
+import React, { useMemo, useState, useRef, useCallback } from "react";
+import Add from "../add/index";
 
 //  每行多少列
 const COLUMN = 5;
@@ -14,31 +14,35 @@ const IMAGE_PADDING = 5;
 const showList = [
   {
     id: 2,
-    name: 'osmo pocket',
-    image: 'https://cdn.pixabay.com/photo/2021/05/29/05/48/beach-6292506__340.jpg',
+    name: "osmo pocket",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/29/05/48/beach-6292506__340.jpg",
   },
   {
     id: 4,
-    name: 'mavic pro',
-    image: 'https://cdn.pixabay.com/photo/2021/05/24/11/56/lake-6278825__340.jpg',
+    name: "mavic pro",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/24/11/56/lake-6278825__340.jpg",
   },
   {
     id: 1,
-    name: 'mavic mini2',
-    image: 'https://cdn.pixabay.com/photo/2021/05/25/12/50/flower-6282371__340.jpg',
+    name: "mavic mini2",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/25/12/50/flower-6282371__340.jpg",
   },
   {
     id: 3,
-    name: '机甲大师s1',
-    image: 'https://cdn.pixabay.com/photo/2021/05/28/15/58/marina-6291287__340.jpg',
+    name: "机甲大师s1",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/28/15/58/marina-6291287__340.jpg",
   },
   {
     id: 0,
-    name: 'mavic 2',
-    image: 'https://cdn.pixabay.com/photo/2021/05/29/17/37/fantasy-6293929__340.jpg',
+    name: "mavic 2",
+    image:
+      "https://cdn.pixabay.com/photo/2021/05/29/17/37/fantasy-6293929__340.jpg",
   },
 ];
-
 
 /** 将某元素插入到数组中的某位置 */
 export function insertBefore(list, from, to) {
@@ -62,21 +66,20 @@ export function insertBefore(list, from, to) {
 export function isEqualBy(a, b, key) {
   const aList = a.map((item) => item[key]);
   const bList = b.map((item) => item[key]);
-  
+
   let flag = true;
   aList.forEach((i, idx) => {
     if (i !== bList[idx]) {
-      flag = false
+      flag = false;
     }
-  })
+  });
   return flag;
 }
 
-
 const DragAndDropPage = () => {
   const [list, setList] = useState(showList);
-  const dropAreaRef = useRef(null)
-  const dragItemRef = useRef()
+  const dropAreaRef = useRef(null);
+  const dragItemRef = useRef();
 
   // 动画需要，需要保持一定的渲染顺序
   const sortedList = useMemo(() => {
@@ -91,27 +94,28 @@ const DragAndDropPage = () => {
   }, [list]);
 
   const handleDragStart = (e, data) => {
-    dragItemRef.current = data
-    const el = dropAreaRef.current?.querySelector(`[data-id="${data.id}"]`)
+    dragItemRef.current = data;
+    const el = dropAreaRef.current?.querySelector(`[data-id="${data.id}"]`);
     if (el) {
-      el.classList.add('.draggingItem')
+      el.classList.add(".draggingItem");
     }
-  }
+  };
 
-  const handleDragEnd = useCallback(()=>{
-    const data = dragItemRef.current
+  const handleDragEnd = useCallback(() => {
+    const data = dragItemRef.current;
     if (data) {
-      const el = dropAreaRef.current?.querySelector(`[data-id="${data.id}"]`)
+      const el = dropAreaRef.current?.querySelector(`[data-id="${data.id}"]`);
       if (el) {
-        el.classList.remove('.draggingItem')
+        el.classList.remove(".draggingItem");
       }
-      dragItemRef.current = undefined
+      dragItemRef.current = undefined;
     }
-  }, [])
+  }, []);
 
-  const updateList = useCallback((clientX, clientY) => {
+  const updateList = useCallback(
+    (clientX, clientY) => {
       const dropRect = dropAreaRef.current?.getBoundingClientRect();
-      
+
       if (dropRect) {
         const offsetX = clientX - dropRect.left;
         const offsetY = clientY - dropRect.top;
@@ -138,20 +142,25 @@ const DragAndDropPage = () => {
         const currentItem = list[currentIndex];
 
         const ordered = insertBefore(list, dragItem, currentItem);
-        if (isEqualBy(ordered, list, 'id')) {
+        if (isEqualBy(ordered, list, "id")) {
           return;
         }
         setList(ordered);
       }
-    }, [list]);
+    },
+    [list]
+  );
 
-  const handleDragOver = useCallback((e) => {
+  const handleDragOver = useCallback(
+    (e) => {
       e.preventDefault();
       updateList(e.clientX, e.clientY);
-    }, [updateList]);
+    },
+    [updateList]
+  );
 
   return (
-    <div 
+    <div
       className="warpper"
       // 绑定 ref 属性
       ref={dropAreaRef}
@@ -174,7 +183,7 @@ const DragAndDropPage = () => {
                 height: HEIGHT,
                 left: col * (WIDTH + IMAGE_PADDING),
                 top: row * HEIGHT,
-                padding: `0 ${IMAGE_PADDING}px`
+                padding: `0 ${IMAGE_PADDING}px`,
               }}
               data-id={item.id}
               // 同时绑定 ondragstart 事件

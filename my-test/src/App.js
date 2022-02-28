@@ -7,25 +7,34 @@ import Card2 from "./components/three/c1";
 import BasicCard from "./components/test/11.jsx";
 import axios from "axios";
 import { useEffect } from "react";
-
+import ResponsiveLocalStorageLayout from "./components/GridLayout";
+import PicturesWall from "./components/upload/index.jsx";
+import Index from "./components/add";
 function App() {
-  useEffect(() => {
-    axios
-      .get("https://api.zuk.pw/situ/book/isbn/9787201094605 ")
-      .then((res) => {
-        console.log(res);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("https://api.zuk.pw/situ/book/isbn/9787201094605 ")
+  //     .then((res) => {
+  //       console.log(res);
+  //     });
+  // }, []);
 
   return (
     <div className="App" style={{ height: "10000px" }}>
-      <Test />
+      {/* <Test /> */}
       {/* <DragAndDropPage/> */}
-      <DndProvider backend={HTML5Backend}>
+      {/* <DndProvider backend={HTML5Backend}>
         <Container />
       </DndProvider>
       <BasicCard />
       <Card2 />
+
+      <ResponsiveLocalStorageLayout /> */}
+      {/* <PicturesWall /> */}
+      {/* <PicturesWall /> */}
+      <Index />
+      <Index />
+      <Index />
     </div>
   );
 }
