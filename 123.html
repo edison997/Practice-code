@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      p {
+        /* width: 120px;
+        height: 1px;
+        background-image: linear-gradient(
+          to right,
+          #ccc 0%,
+          #ccc 50%,
+          transparent 50%
+        );
+        background-size: 8px 1px;
+        background-repeat: repeat-x; */
+        width: 120px;
+        border: 1px dashed transparent;
+        background: linear-gradient(white, white) padding-box,
+          repeating-linear-gradient(#ccc 0, #ccc 0.25em, white 0, white 0.75em);
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+
+  <body onload="init();">
+    <!-- <div id="target1">Touch me ...</div>
+    <div id="target2" onpointerover="overHandler(event)">Touch me ...</div> -->
+
+    <p>111</p>
+
+    <script>
+      function overHandler(ev) {
+        console.log(1);
+        // Process the pointerover event
+      }
+      function init() {
+        var el = document.getElementById("target1");
+        el.onpointerover = overHandler;
+      }
+    </script>
+  </body>
+</html>

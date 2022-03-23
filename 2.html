@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <button>click</button>
-    <script>
-      const btn = document.querySelector("button");
-      btn.onclick = () => {
-        if (confirm(111)) {
-          alert("delete");
-        } else {
-          alert("cancel");
-        }
-      };
-    </script>
-  </body>
+<html>
+<script>
+function overHandler(ev) {
+ // Process the pointerover event
+}
+function init() {
+ var el=document.getElementById("target1");
+ el.onpointerover = overHandler;
+}
+</script>
+<body onload="init();">
+<div id="target1"> Touch me ... </div>
+<div id="target2" onpointerover="overHandler(event)"> Touch me ... </div>
+</body>
 </html>
